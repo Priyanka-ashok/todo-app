@@ -8,5 +8,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. run `npm start`
 5. Live at the `localhost:3000`
 
-App is deployed at `https://relaxed-rosalind-4635f4.netlify.app/`
+App is deployed at https://relaxed-rosalind-4635f4.netlify.app/
 
