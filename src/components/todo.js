@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+//Basic Todo App 
 export class TodoApp extends Component {
   state = {
     todos: ["Learn React", "Learn Redux", "Hooks"],

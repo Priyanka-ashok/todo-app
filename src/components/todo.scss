@@ -1,0 +1,134 @@
+$boxShadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$f-20: 20px;
+$f-25: 25px;
+$f-15: 15px;
+$f-40: 40px;
+$color1: #2469d9;
+$color2: salmon;
+$color3: White;
+$color4: black;
+$color5: red;
+$breakpoint-mobile: 768px;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  h1 {
+    font-size: 30px;
+    @media (max-width: $breakpoint-mobile) {
+      font-size: $f-20;
+    }
+  }
+}
+
+.plus-btn {
+  position: fixed;
+  cursor: pointer;
+  font-size: $f-40;
+  background-color: $color2;
+  color: $color3;
+  border-radius: 50%;
+  border: none;
+  right: 0;
+  bottom: 0;
+  line-height: 30px;
+  height: 50px;
+  width: 50px;
+  margin: 30px;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: $f-20;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__input {
+    min-height: 50px;
+    width: 400px;
+    border-radius: 4px;
+    border: 1px solid $color4;
+    box-sizing: content-box;
+    padding: 10px;
+    font-size: $f-25;
+    box-shadow: $boxShadow;
+    @media (max-width: $breakpoint-mobile) {
+      width: auto;
+      font-size: $f-20;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+    font-size: $f-20;
+    margin-top: 20px;
+    color: $color1;
+    text-transform: capitalize;
+    padding: 5px 15px;
+    border-radius: 6px;
+    border: 1px solid $color1;
+    box-shadow: $boxShadow;
+    &:hover {
+      background-color: $color2;
+      color: $color3;
+      border: 1px solid $color3;
+    }
+    @media (max-width: $breakpoint-mobile) {
+      font-size: $f-15;
+    }
+  }
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.todoList:nth-of-type(2) {
+  text-align: center;
+}
+
+.clear-list-btn {
+  cursor: pointer;
+  color: $color3;
+  background-color: $color5;
+  width: fit-content;
+  font-size: $f-20;
+  padding: 10px 70px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 30px;
+  @media (max-width: $breakpoint-mobile) {
+    font-size: $f-15;
+  }
+}
+
+.todoItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border: 1px solid $color4;
+  border-radius: 4px;
+  width: fit-content;
+  margin-top: 20px;
+  padding: 0 20px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+  box-shadow: $boxShadow;
+  &__icons {
+    display: flex;
+  }
+  img {
+    height: 35px;
+  }
+  span:first-child {
+    padding: 0 10px 0 30px;
+  }
+  p {
+    font-size: $f-20;
+    color: $color1;
+  }
+}
